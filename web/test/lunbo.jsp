@@ -16,12 +16,22 @@
 </head>
 <style>
     #myCarousel { margin:0 auto;margin-top: 100px}
+
+    .carousel-item img{
+        max-width: 100%;
+        height:auto;
+    }
+
+    .carousel-control a{
+        max-width: 100%;
+        height:auto;
+    }
 </style>
 <script>
     $(function(){
         //轮播图速度快慢
         $('#myCarousel').carousel({
-            interval: 2000
+            interval: 1000
         })
     });
 
@@ -39,19 +49,19 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="/r/images/lunbo/1.jpg" alt="First slide" style="width: 100%;height: 48%">
+            <img src="/r/images/lunbo/1.jpg" alt="First slide">
         </div>
         <div class="item">
-            <img src="/r/images/lunbo/2.jpg" alt="Second slide" style="width: 100%;height: 48%">
+            <img src="/r/images/lunbo/2.jpg" alt="Second slide">
         </div>
         <div class="item">
-            <img src="/r/images/lunbo/3.jpg" alt="Third slide" style="width: 100%;height: 48%">
+            <img src="/r/images/lunbo/3.jpg" alt="Third slide">
         </div>
         <div class="item">
-            <img src="/r/images/lunbo/4.jpg" alt="Fourth slide" style="width: 100%;height: 48%">
+            <img src="/r/images/lunbo/4.jpg" alt="Fourth slide">
         </div>
         <div class="item">
-            <img src="/r/images/lunbo/5.jpg" alt="Fifth slide" style="width: 100%;height: 48%">
+            <img src="/r/images/lunbo/5.jpg" alt="Fifth slide">
         </div>
     </div>
     <!-- 轮播（Carousel）导航 -->

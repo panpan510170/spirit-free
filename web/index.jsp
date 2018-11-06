@@ -2,12 +2,18 @@
 <html>
 <head>
     <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <jsp:include page="header.jsp"></jsp:include>
   <!--content start-->
 <style>
     #myCarousel { margin:0 auto;}
+
+    .carousel-item img{
+        max-width: 100%;
+        height:auto;
+    }
 </style>
 <script>
     $(function(){
@@ -50,17 +56,62 @@
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"></a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
 </div>
-  <!--推荐内容 start-->
- <div style="margin-left: 15%">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
-     <img src="r/images/index/1.jpg" style="margin-top: 10px">
- </div>
+<style>
+    td{padding:10px;}
+</style>
+<!--推荐内容 start-->
+<div style="margin-right:15%;margin-left: 15%;margin-top: 2%">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div>
+                <ul class="nav navbar-nav">
+                    <%--<li class="active"><a style="font-size: 2em">推荐</a></li>--%>
+                    <li><a style="font-size: 2em">推荐</a></li>
+                    <li><a style="font-size: 2em">热门</a></li>
+                </ul>
+            </div>
+            <div style="float: right">
+                <a style="font-size: 2em">更多>>></a>
+            </div>
+        </div>
+    </nav>
+    <table>
+        <tr>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+        </tr>
+        <tr>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+        </tr>
+        <tr>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+        </tr>
+        <tr>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td><img src="r/images/index/123.jpg"></td>
+            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+        </tr>
+    </table>
+</div>
+<!--推荐内容 end-->
 
-  <!--推荐内容 end-->
 </body>
 <!--content end-->
 <jsp:include page="footer.jsp"></jsp:include>

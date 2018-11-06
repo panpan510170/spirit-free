@@ -3,7 +3,7 @@
 
 <head >
     <title>Title</title>
-    <%-- <link href="r/css/header/header.css?v=1.0.0" rel="stylesheet">--%>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/r/css/bootstrap.min.css">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -27,6 +27,7 @@
     #navigation {
         float: left;
         height: 10%;
+        /*margin-left: 15%;*/
     }
 
     #navigation ul{
