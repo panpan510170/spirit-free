@@ -20,7 +20,7 @@
     }
 </style>
 <body>
-<div style="margin-top: 2%;background-color: #5bc0de;">
+<div style="background-color: #5bc0de;">
     <img src="r/images/footer/footer.png">
 </div>
 <div class="mod-home-seolink" style="margin-left: 15%;margin-top: 2%;margin-right: 15%">

@@ -1,15 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>首页</title>
+    <title>free-首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <jsp:include page="header.jsp"></jsp:include>
   <!--content start-->
 <style>
-    #myCarousel { margin:0 auto;}
-
     .carousel-item img{
         max-width: 100%;
         height:auto;
@@ -25,7 +23,7 @@
 
 </script>
 <body>
- <div id="myCarousel" class="carousel slide" style="width: 70%;">
+ <div id="myCarousel" class="carousel slide">
   <!-- 轮播（Carousel）指标 -->
   <ol class="carousel-indicators" style="display:none">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -60,8 +58,8 @@
     td{padding:10px;}
 </style>
 <!--推荐内容 start-->
-<div style="margin-right:15%;margin-left: 15%;margin-top: 2%">
-    <nav class="navbar navbar-default" role="navigation">
+<div style="margin-right:15%;margin-left: 15%;margin-top: 2%;margin-bottom: 2%">
+    <nav class="navbar navbar-default" role="navigation" style="background-color: white">
         <div class="container-fluid">
             <div>
                 <ul class="nav navbar-nav">
@@ -115,6 +113,4 @@
 </body>
 <!--content end-->
 <jsp:include page="footer.jsp"></jsp:include>
-
-
 </html>

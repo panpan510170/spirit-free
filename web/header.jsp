@@ -5,10 +5,16 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/r/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/r/css/login/form-elements.css">
+    <link rel="stylesheet" href="/r/css/login/style.css">
+
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </head>
 <style>
+
+
     #headers-context {
         margin:0 auto;
         height: 4%;
@@ -69,7 +75,7 @@
             <img src="/r/images/header/weixinerweima.png" style="width: 120px;height: 110px">
         </div>
         <b style="margin-left: 50%">
-            <b>登录</b>
+            <b><a href="login.jsp">登录</a></b>
             <b style="margin-left: 0.5%">注册</b>
             <b style="margin-left: 0.5%">用户中心</b>
         </b>
@@ -85,7 +91,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="input-group">
-                                <input type="text" class="form-control" style="width: 400px">
+                                <input type="text" class="form-control" style="width: 400px;border:0.5px solid #378888;">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button">
                                         搜索
