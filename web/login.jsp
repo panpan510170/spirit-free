@@ -31,18 +31,14 @@
                         <div class="form-bottom">
                             <form role="form" action="" method="post" class="registration-form">
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-first-name">First name</label>
-                                    <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                                    <label class="sr-only" for="userName">userName</label>
+                                    <input type="text" name="form-first-name" placeholder="userName" class="form-first-name form-control" id="userName">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-last-name">Last name</label>
-                                    <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                                    <label class="sr-only" for="password">password</label>
+                                    <input type="text" name="form-last-name" placeholder="password" class="form-last-name form-control" id="password">
                                 </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="form-email">Email</label>
-                                    <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-                                </div>
-                                <button type="submit" class="btn">Login!</button>
+                                <button type="button" class="btn" onclick="login()">Login!</button>
                             </form>
                         </div>
                     </div>
@@ -51,6 +47,35 @@
         </div>
     </div>
 </div>
+<script>
+    function login() {
+
+        $.ajax({
+            url: url+"/login/login",
+            type: "post",
+            data:{
+                "userName":$("#userName").val(),
+                "password":$("#password").val()
+            },
+            dataType: "json",
+            success: function (obj) {
+                if(1 != obj.code){
+                    sweetAlert(obj.message);
+                }else{
+                    /*alert(obj.data.token);
+                    alert(obj.data.userName);*/
+                    sessionStorage.setItem("token",obj.data.token);
+                    sessionStorage.setItem("userName",obj.data.userName);
+                    location.href="/view/user/userInfo.jsp";
+                }
+            },
+            error: function (obj) {
+                alert(obj);
+            }
+        });
+    }
+
+</script>
 </body>
 <jsp:include page="footer.jsp"></jsp:include>
 </html>

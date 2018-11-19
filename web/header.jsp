@@ -5,16 +5,17 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/r/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/r/css/sweetalert.css">
     <link rel="stylesheet" href="/r/css/login/form-elements.css">
     <link rel="stylesheet" href="/r/css/login/style.css">
 
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/sweetalert.min.js"></script>
 </head>
+
 <style>
-
-
     #headers-context {
         margin:0 auto;
         height: 4%;
@@ -33,7 +34,7 @@
     #navigation {
         float: left;
         height: 10%;
-        /*margin-left: 15%;*/
+        margin-left: 15%;
     }
 
     #navigation ul{
@@ -57,7 +58,11 @@
         height: 10%;
     }
 </style>
+
+
 <script type="text/javascript">
+    var url = "http://localhost:8001";//全局常量
+
     function showImg() {
         document.getElementById("wxImg").style.display="block";
     }
@@ -75,13 +80,15 @@
             <img src="/r/images/header/weixinerweima.png" style="width: 120px;height: 110px">
         </div>
         <b style="margin-left: 50%">
-            <b><a href="login.jsp">登录</a></b>
-            <b style="margin-left: 0.5%">注册</b>
+            <b id="login"><a href="login.jsp">登录</a></b>
+            <b id="hello" style="display: none"><a href="/view/user/userInfo.jsp">您好!</a> </b>
+            <b id="userNameSession" style="margin-left: 0.5%;display: none"></b>
+            <b id="regist" style="margin-left: 0.5%"><a href="regist.jsp">注册</a></b>
             <b style="margin-left: 0.5%">用户中心</b>
         </b>
 
     </div>
-    <div id="headers">
+    <div id="headers" style="margin-bottom: 1%">
         <div id="logo">
             <img src="/r/images/logo.png" style="width:100%;height: 1000%">
         </div>
@@ -91,7 +98,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="input-group">
-                                <input type="text" class="form-control" style="width: 400px;border:0.5px solid #378888;">
+                                <input type="text" class="form-control" style="border:0.5px solid #378888;">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button">
                                         搜索
@@ -104,7 +111,7 @@
             </div>
             <div style="margin-left: 300px;padding: 0px">
                 <ul>
-                    <li>首页</li>
+                    <li><a href="../../index.jsp">首页</a></li>
                     <li>话题</li>
                     <li>目的地</li>
                     <li>探索之旅</li>
@@ -114,38 +121,23 @@
        <%-- <div id="loginAndRegist"> 登录 | 注册 </div>--%>
     </div>
 </body>
+<script>
+    /*
+        sessionStorage.setItem("key","value");//保存数据到sessionStorage
+        var data = sessionStorage.getItem（"key"）;//获取数据
+        sessionStorage.removeItem("key");//删除数据
+        sessionStorage.clear(); //删除保存的所有数据
+    */
+
+    var token = sessionStorage.getItem("token");   //获取数据
+    if("" != token && null != token){
+        $("#login").hide();
+        $("#regist").hide();
+        var userName = sessionStorage.getItem("userName");
+        $("#hello").show();
+        $("#userNameSession").show();
+        $("#userNameSession").text(userName);
+    }
+</script>
 
 </html>
-<%--<script src="/js/jquery.min.js?v=2.1.4"></script>
-  <head>
-    <title>登录</title>
-  </head>
-  <body>
-    <form>
-      用户名:<input type="text" name="userName" id="userName">
-      密码:<input type="text" name="password" id="password">
-      <a onclick="ine()">登录</a>
-    </form>
-  </body>
-  <script>
-      function ine() {
-          $.ajax({
-              url: "http://localhost:8087/login/login",
-              data:{
-                  userName:$("#userName").val(),
-                  password:$("#password").val()
-              },
-              type: "post",
-              dataType: "json",
-              success: function (obj) {
-                 alert(obj.code);
-                 alert(obj.message);
-              },
-              error: function(XMLHttpRequest, textStatus, errorThrown) {
-                  alert(XMLHttpRequest.status);
-                  alert(XMLHttpRequest.readyState);
-                  alert(textStatus);
-              }
-          });
-      }
-  </script>--%>

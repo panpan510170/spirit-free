@@ -55,7 +55,9 @@
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
 </div>
 <style>
-    td{padding:10px;}
+    .image{width: 15%}
+    .text{width: 10%}
+    td {padding: 1%}
 </style>
 <!--推荐内容 start-->
 <div style="margin-right:15%;margin-left: 15%;margin-top: 2%;margin-bottom: 2%">
@@ -75,36 +77,36 @@
     </nav>
     <table>
         <tr>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
         </tr>
         <tr>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
         </tr>
         <tr>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
         </tr>
         <tr>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
-            <td><img src="r/images/index/123.jpg"></td>
-            <td><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
+            <td class="image"><img src="r/images/index/123.jpg"></td>
+            <td class="text"><b>随心定制纯玩自由行可升级香格里拉酒店泸沽湖尊享特色客栈</b></td>
         </tr>
     </table>
 </div>
