@@ -61,7 +61,7 @@
 
 
 <script type="text/javascript">
-    var url = "http://localhost:8001";//全局常量
+    var url = "http://localhost:8888";//全局常量
 
     function showImg() {
         document.getElementById("wxImg").style.display="block";
@@ -73,7 +73,7 @@
 <body>
     <div id="headers-context">
         <img src="/r/images/header/phone.png" style="margin-right: 0.5%">
-        <b style="margin-right: 2%">商业联系电话:15811246666</b>
+        <b style="margin-right: 2%">商业联系QQ:328032704</b>
         <img src="/r/images/header/iphone.png" style="margin-right: 0.5%">
         <b style="margin-right: 1%" onMouseout="hideImg()" onmouseover="showImg()">下载APP</b>
         <div id="wxImg" style="display:none;height: 50px;background: #f00;margin-left:15%;position: absolute;">
