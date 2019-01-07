@@ -82,7 +82,7 @@
         <b style="margin-left: 50%">
             <b id="login"><a href="login.jsp">登录</a></b>
             <b id="hello" style="display: none"><a href="/view/user/userInfo.jsp">您好!</a> </b>
-            <b id="userNameSession" style="margin-left: 0.5%;display: none"></b>
+            <a href="/view/user/userInfo.jsp"><b id="userNameSession" style="margin-left: 0.5%;display: none"></b></a>
             <b id="regist" style="margin-left: 0.5%"><a href="regist.jsp">注册</a></b>
             <b style="margin-left: 0.5%">用户中心</b>
         </b>

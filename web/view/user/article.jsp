@@ -11,7 +11,7 @@
     <title>free--我的文章--个人资料</title>
 </head>
 <body>
-    <div id="content" style="border: #8c8c8c 1px solid;float: left;">
+    <div id="content" style="width: 84%;height: 100%;border: #8c8c8c 1px solid;float: left;">
         <h1>我的文章</h1>
     </div>
 <script>

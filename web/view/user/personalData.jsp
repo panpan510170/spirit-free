@@ -1,15 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2018/11/29
-  Time: 11:35
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
 </head>
+<jsp:include page="userInfoCommon.jsp"></jsp:include>
+
 <body>
 <div id="headUrl" style="width: 15%;height: 100%;border: #8c8c8c 1px solid;float: left;">
     <img src="/r/images/headUrl.jpg">
@@ -25,7 +20,8 @@
     <p style="margin: 2%"><b>生日 :<span id="birthday"></span> </b></p>
 </div>
 </div>
-<script>
+
+<script type="text/javascript">
     var token = sessionStorage.getItem("token");
     $.ajax({
         url: url+"/user/getUser",
