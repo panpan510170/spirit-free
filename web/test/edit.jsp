@@ -142,18 +142,56 @@
     <button id="editorSetBtn">设置内容</button>
     <button id="editorGetBtn1">获取内容1</button>
     <button id="editorGetBtn2">获取内容2</button>
+    <button id="add">追加内容</button>
 </body>
 <script type="text/javascript" src='/js/jquery-1.11.1.min.js'></script>
 <script type="text/javascript" src='/js/bootstrap.min.js'></script>
-<script type="text/javascript" src='/js/wangEditor.min.js'></script>
+<script type="text/javascript" src='/js/wangEditor-video.min.js'></script>
 <script type="text/javascript">
 
     $(function () {
 
         var editor = new wangEditor('#editor');
+        /*var indentMenus = {
+            'indent':{
+                'title': '上传视屏',
+                'type': 'btn',
+                'txt': 'fa fa-indent',
+                'command': 'indent',
+                'callback':function () {
+                    alert("123");
+                }
+            }
+        };*/
+        /*editor.customConfig.menus = [
+            'head',  // 标题
+            'bold',  // 粗体
+            'fontSize',  // 字号
+            'fontName',  // 字体
+            'italic',  // 斜体
+            'underline',  // 下划线
+            'strikeThrough',  // 删除线
+            'foreColor',  // 文字颜色
+            'backColor',  // 背景颜色
+            'link',  // 插入链接
+            'list',  // 列表
+            'justify',  // 对齐方式
+            'quote',  // 引用
+            'emoticon',  // 表情
+            'image',  // 插入图片
+            'table',  // 表格
+            'video',  // 插入视频
+            'hr',//上传视屏
+            'code',  // 插入代码
+            'undo',  // 撤销
+            'redo'  // 重复
+
+        ]
+*/
         editor.customConfig.uploadImgServer = 'upload.php';
         editor.customConfig.uploadImgShowBase64 = true;
         editor.customConfig.uploadImgServer = 'http://localhost:8888/upload/uploadImg'; //上传URL
+        editor.customConfig.uploadVideoServer = 'http://localhost:8888/upload/uploadImg'; //上传URL
         editor.customConfig.uploadImgMaxSize = 3 * 1024 * 1024;
         editor.customConfig.uploadImgMaxLength = 15;
         editor.customConfig.uploadFileName = 'myFileName';
@@ -164,6 +202,7 @@
             // editor.command(null, 'insertHtml', '<img src="' + url + '" alt="' + url + '" style="max-width:100%;"/>');
             // result 必须是一个 JSON 格式字符串！！！否则报错
             customInsert: function (insertImg, result, editor) {
+                //TODO 判断上传文件格式类型，执行不同的逻辑
                 var url =result.data;
                 insertImg(url);
             }
@@ -198,6 +237,10 @@
             //获取编辑器的内容，不带样式，纯文本
             alert(editor.txt.text());
         })
+
+        $("#add").click(function () {
+            editor.txt.append("<embed src='http://xiu8live.oss-cn-beijing.aliyuncs.com/system/img/activity/d9e89a6de2da6f509e9d5a11eec57447.mp4'></embed>");
+        });
     });
 
 
